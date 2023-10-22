@@ -1,4 +1,85 @@
-#quote-box {
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    background-color: rgb(189, 187, 153);
+}
+
+.quote-box {
     border-radius: 3px;
+    position: relative;
     width: 450px;
+    padding: 40px 50px;
+    display: table;
+    background-color: #fff;
+}
+
+.quote-box .quote-text {
+    text-align: center;
+    width: 450px;
+    height: auto;
+    clear: both;
+    font-weight: 700;
+    font-size: 1.85em;
+}
+
+.quote-box .quote-author {
+    width: 450px;
+    height: auto;
+    clear: both;
+    padding-top: 20px;
+    font-size: 1em;
+    text-align: right;
+    font-weight: 300;
+}
+
+.quote-box .buttons{
+    width: 450px;
+    margin: auto;
+    display: block;
+}
+
+.quote-box .buttons .button1, .quote-box .buttons .button2{
+    float: left;
+    padding: 0px;
+    padding-top: 8px;
+    text-align: center;
+    font-size: 1.2em;
+    /* margin-top: 30px; */
+    margin-right: 5px;
+    height: 30px;
+    width: 40px;
+}
+
+.quote-box .buttons .button3{
+    float: right;
+}
+
+button, .button1, .button2{
+    height: 38px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: rgb(189, 187, 153);
+    outline: none;
+    font-size: 0.85em;
+    padding: 8px 18px 6px 18px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.footer{
+    width: 450px;
+    display: block;
+    text-align: center;
+    margin: 15px auto 30px auto;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
 }
